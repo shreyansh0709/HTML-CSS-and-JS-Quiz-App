@@ -1,0 +1,98 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>DSC Quiz 2020</title>
+
+</head>
+<body>
+    <div class="grid">
+        <div id="quiz">
+            <h1>DSC Quiz 2020</h1>
+            <hr style="margin-bottom: 15px">
+ 
+            <p id="question"></p>
+ 
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+            </div>
+ 
+            <hr style="margin-top: 50px">
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="quizquestions.js"></script>
+
+    <style>
+ body {
+    background-color: #a8072f;
+}
+ 
+.grid {
+    width: 650px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #0b1426;
+    padding: 10px 50px 50px 50px;
+    border: 2px solid #cbcbcb;
+    
+}
+ 
+.grid h1 {
+    font-family: "sans-serif";
+    background-color: #9100f2;
+    font-size: 60px;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px 0px;
+    
+}
+ 
+#score {
+    color: #01BBFF;
+    text-align: center;
+    font-size: 30px;
+}
+ 
+.grid #question {
+    font-family: "Arial";
+    font-size: 30px;
+    color: #01BBFF;
+}
+ 
+.buttons {
+    margin-top: 45px;
+}
+ 
+#btn0, #btn1, #btn2, #btn3 {
+    background-color: #d97707;
+    width: 250px;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #1D3C6A;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+}
+ 
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+    cursor: pointer;
+    background-color: #01BBFF;
+}
+ 
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+    outline: 0;
+}
+ 
+#progress {
+    color: #ffffff;
+    font-size: 18px;
+}
+</style>
+ 
+</body>
+</html>
